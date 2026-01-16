@@ -1,0 +1,79 @@
+\documentclass[12pt, a4paper]{report}
+
+% --- PACKAGES & SETUP ---
+\usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry} % Margins
+\usepackage{mathptmx}   % Times New Roman
+\usepackage{setspace}
+\onehalfspacing         % 1.5 Spacing
+\usepackage{titlesec}   % Heading sizes
+\usepackage{graphicx}   % Images
+\usepackage[labelfont=bf, textfont=bf, font=small]{caption}    % Bold, small Captions
+\usepackage{float}      % Image positioning
+
+% --- POINT TO IMAGES FOLDER ---
+\graphicspath{ {./images/} }
+
+% --- HEADING FORMATS ---
+% Chapter: 16pt, Bold, Centered
+\titleformat{\chapter}[display]
+  {\normalfont\large\bfseries\centering}
+  {\chaptertitlename\ \thechapter}{10pt}{\Large}
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+
+% Section: 14pt, Bold
+\titleformat{\section}
+  {\normalfont\fontsize{14}{16.8}\selectfont\bfseries}{\thesection}{1em}{}
+
+% Subsection: 12pt, Bold
+\titleformat{\subsection}
+  {\normalfont\fontsize{12}{14.4}\selectfont\bfseries}{\thesubsection}{1em}{}
+
+
+% --- DOCUMENT STARTS ---
+\begin{document}
+
+% 1. Title Page (Input from file)
+\input{titlepage}
+
+% 2. Scanned Certificates (Full Page Images)
+\newpage
+\thispagestyle{empty}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=0.95\textheight, keepaspectratio]{certificate_scan}
+\end{figure}
+
+\newpage
+\thispagestyle{empty}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=0.95\textheight, keepaspectratio]{approval_scan}
+\end{figure}
+
+% 3. Front Matter (Abstract, Ack, TOC)
+\newpage
+\pagenumbering{roman} % Start Roman Numerals (i, ii...)
+
+\chapter*{Acknowledgements}
+\input{chapters/00_acknowledgement}
+
+\chapter*{Abstract}
+\input{chapters/00_abstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+% 4. Main Chapters
+\newpage
+\pagenumbering{arabic} % Start Arabic Numerals (1, 2...)
+
+\input{chapters/01_introduction}
+\input{chapters/02_background}
+\input{chapters/03_conclusion}
+
+% 5. References (Optional)
+% \bibliographystyle{ieeetr}
+% \bibliography{references}
+
+\end{document}
