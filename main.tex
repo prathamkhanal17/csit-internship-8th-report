@@ -4,12 +4,17 @@
 \usepackage{mathptmx}
 \usepackage{setspace}
 \onehalfspacing
+\usepackage{longtable}
+\usepackage{parskip}
 \usepackage{titlesec}
 \usepackage{graphicx}
 \usepackage[labelfont=bf, textfont=bf, font=small]{caption}
 \usepackage{float}
 \usepackage{nomencl}
 \usepackage{url}
+\usepackage[style=apa,backend=biber]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+\addbibresource{references.bib}
 
 \graphicspath{ {./images/} }
 
@@ -74,5 +79,7 @@
 
 \appendix
 \input{chapters/07_appendices}
+
+\printbibliography
 
 \end{document}

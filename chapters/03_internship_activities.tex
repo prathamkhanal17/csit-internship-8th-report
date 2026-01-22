@@ -1,115 +1,180 @@
 \section{Roles and Responsibilities}
 
-During the ten-week internship at Subisu Cablent Pvt Ltd, several key roles and responsibilities were undertaken as part of the Network Operations Center team. The primary responsibility involved monitoring network performance metrics through the operational dashboard, continuously tracking bandwidth utilization, latency, packet loss, and connection status across the network. This monitoring activity required attention to detail and the ability to recognize patterns that might indicate potential issues.
+During the ten-week internship period at the Network Operations Center (NOC), several key roles and responsibilities were undertaken to ensure network stability and customer satisfaction.
 
-Responding to network alerts and incidents formed a significant portion of the daily responsibilities. When automated systems or manual observations detected anomalies, the role included investigating the root cause, assessing the impact on services, and implementing appropriate remediation measures. This process often involved coordinating with other team members, consulting technical documentation, and applying troubleshooting procedures.
+\begin{itemize}
+    \item \textbf{Network Monitoring:} Continuous monitoring of network health was performed using the Zabbix platform. This included observing uptime, latency, and packet loss for distribution switches in the Kathmandu Valley area.
 
-Assisting in customer technical support provided valuable experience in understanding the end-user impact of network issues. This responsibility included reviewing customer support tickets, analyzing network conditions reported by customers, and providing technical input to resolve connectivity problems. The role required effective communication with support staff to translate technical network data into actionable information for customer service teams.
+    \item \textbf{Customer Support and CRM Management:} Responsibilities included handling the Customer Relationship Management (CRM) system to log trouble tickets. Technical issues were categorized into slow internet, loss of signal (LOS), or billing issues, and complex cases were escalated to Level-2 engineers.
 
-Documenting network issues and resolutions was an ongoing responsibility throughout the internship. Creating detailed records of incidents, troubleshooting steps, and successful solutions contributed to the knowledge base and facilitated training of new team members. The documentation also enabled trend analysis and identification of recurring issues that required preventive measures.
+    \item \textbf{Device Configuration:} Basic configuration of Layer-2 switches was carried out, including the creation of VLANs such as VLAN~10 for data traffic and VLAN~20 for voice traffic, along with port assignments using command-line interfaces.
 
-Participating in bandwidth optimization projects provided opportunities to apply analytical skills to improve network efficiency. This involved collecting and analyzing bandwidth usage data, identifying peak usage patterns, and contributing to recommendations for capacity planning and resource allocation.
+    \item \textbf{Fiber Diagnostics:} Fiber to the Home (FTTH) issues were diagnosed by analyzing optical power levels (Rx/Tx) and identifying customers experiencing high signal attenuation below $-27$~dBm.
+
+    \item \textbf{System Administration:} Basic Linux server administration tasks were conducted, including accessing servers via SSH and analyzing system logs to support troubleshooting processes.
+
+    \item \textbf{Network Security Implementation:} Network security tasks included configuring Access Control Lists (ACLs) on routers and monitoring DDoS mitigation systems to safeguard core network infrastructure.
+\end{itemize}
 
 \section{Weekly Log}
 
-During the first week of the internship, the focus was on orientation to the company and introduction to the Network Operations Center environment. Activities included meeting the team, understanding the organizational structure, and receiving an overview of the network infrastructure at the Chitwan branch. Training sessions covered the use of monitoring dashboards, ticket management systems, and basic operational procedures.
+\begin{longtable}{|p{1.5cm}|p{2.5cm}|p{10cm}|}
+\hline
+\textbf{Week} & \textbf{Date} & \textbf{Activities Performed} \\
+\hline
+\endfirsthead
 
-In the second week, the activities shifted toward shadowing experienced NOC operators during their daily monitoring routines. Learning objectives included understanding the network topology, recognizing normal performance patterns, and identifying common indicators of network issues. Hands-on practice with monitoring tools was conducted under supervision to build familiarity with the interface and data interpretation.
+\hline
+\textbf{Week} & \textbf{Date} & \textbf{Activities Performed} \\
+\hline
+\endhead
 
-The third week focused on network troubleshooting fundamentals. Activities included learning router configuration basics, understanding network diagnostic commands, and practicing remote troubleshooting techniques. The intern observed and assisted with resolution of minor network incidents, following established procedures for diagnosis and resolution.
+First & 2082/07/23 &
+\begin{minipage}[t]{10cm}
+\begin{itemize}
+    \item Attended internship orientation and introduction to the NOC team [cite: 8-9].
+    \item Set up the workspace and installed required software tools including PuTTY, WinBox, and Microsoft Office[cite: 10].
+    \item Studied company policies and security protocols related to server room access[cite: 6, 12].
+\end{itemize}
+\end{minipage} \\ \hline
 
-During the fourth week, bandwidth analysis tools were introduced and practical exercises were conducted. The intern learned to collect and interpret bandwidth usage data, identify peak usage periods, and analyze traffic patterns. Customer support rotation provided exposure to the service desk environment and understanding of how network issues translate to customer complaints.
+Second & 2082/07/30 &
+\begin{minipage}[t]{10cm}
+\begin{itemize}
+    \item Studied optical fiber hardware, differentiating between single-mode and multi-mode cables[cite: 33].
+    \item Learned to identify connectors (SC, LC, and ST) and color codes (UPC and APC)[cite: 34].
+    \item Observed fiber splicing operations using a fusion splicer[cite: 35].
+\end{itemize}
+\end{minipage} \\ \hline
 
-Fifth week marked the beginning of the network monitoring dashboard development project. Activities included planning the dashboard features, designing the data collection mechanisms, and starting implementation of the visualization components. Weekly meetings with the mentor provided guidance on technical approach and project milestones.
+Third & 2082/08/07 &
+\begin{minipage}[t]{10cm}
+\begin{itemize}
+    \item Gained read-only access to the Zabbix monitoring dashboard[cite: 58].
+    \item Monitored distribution switches and analyzed latency and packet loss graphs [cite: 58-59].
+    \item Investigated critical alerts related to device downtime caused primarily by power failures[cite: 62].
+\end{itemize}
+\end{minipage} \\ \hline
 
-The sixth week continued with dashboard development, focusing on the implementation of automated alert mechanisms. Activities included defining alert thresholds, configuring notification systems, and testing alert delivery. The intern worked on integrating data from multiple monitoring sources into a unified interface.
+Fourth & 2082/08/14 &
+\begin{minipage}[t]{10cm}
+\begin{itemize}
+    \item Created trouble tickets in the CRM system based on customer reports[cite: 82].
+    \item Categorized issues and escalated complex problems to Level-2 engineers[cite: 83].
+    \item Learned the importance of accurate documentation for faster issue resolution[cite: 85].
+\end{itemize}
+\end{minipage} \\ \hline
 
-Seventh week activities centered on automated reporting implementation. The focus was on developing scheduled reports that summarize network performance metrics, incident statistics, and bandwidth utilization trends. Testing and refinement of reporting features was conducted to ensure accuracy and usefulness of generated reports.
+Fifth & 2082/08/21 &
+\begin{minipage}[t]{10cm}
+\begin{itemize}
+    \item Accessed Cisco switches using console cables and PuTTY[cite: 106].
+    \item Created VLANs for data (VLAN 10) and voice (VLAN 20) traffic[cite: 107].
+    \item Assigned switch ports using appropriate configuration commands like \texttt{switchport access vlan}[cite: 108].
+\end{itemize}
+\end{minipage} \\ \hline
 
-During the eighth week, integration activities were undertaken to connect the monitoring dashboard with existing systems. This involved connecting to ticket management platforms, aligning data formats, and ensuring seamless information flow between systems. Documentation of the dashboard features and user guides was also completed.
+Sixth & 2082/08/28 &
+\begin{minipage}[t]{10cm}
+\begin{itemize}
+    \item Checked Rx and Tx optical power levels of customer ONUs[cite: 130].
+    \item Identified customers experiencing high attenuation levels below $-27$~dBm[cite: 131].
+    \item Provided guidance to customers regarding inspection of fiber patch cords for bends[cite: 131].
+\end{itemize}
+\end{minipage} \\ \hline
 
-Ninth week focused on performance optimization of the implemented systems. The intern conducted load testing, analyzed system performance metrics, and made adjustments to improve responsiveness and reliability. Feedback was collected from NOC staff regarding dashboard usability and feature suggestions were documented.
+Seventh & 2082/09/06 &
+\begin{minipage}[t]{10cm}
+\begin{itemize}
+    \item Calculated subnetting schemes for corporate clients to ensure efficient IP usage[cite: 154].
+    \item Configured static routing on test routers to direct traffic[cite: 155].
+    \item Resolved IP conflicts caused by incorrect port connections or loops[cite: 156, 159].
+\end{itemize}
+\end{minipage} \\ \hline
 
-The final week of the internship involved completing documentation of all projects, preparing a summary presentation of achievements, and conducting knowledge transfer activities. The intern provided demonstrations of implemented systems, documented operational procedures, and ensured that all work was properly handed over to the team.
+Eighth & 2082/09/13 &
+\begin{minipage}[t]{10cm}
+\begin{itemize}
+    \item Accessed CentOS monitoring servers using SSH[cite: 181].
+    \item Analyzed system logs using \texttt{grep}, \texttt{tail}, and \texttt{chmod}[cite: 182].
+    \item Verified DNS service status using \texttt{systemctl status named}[cite: 183].
+\end{itemize}
+\end{minipage} \\ \hline
 
-\section{Description of Projects Involved}
+Ninth & 2082/09/20 &
+\begin{minipage}[t]{10cm}
+\begin{itemize}
+    \item Studied firewall rules protecting the core network[cite: 207].
+    \item Configured standard and extended ACLs to block specific IP ranges[cite: 208].
+    \item Observed live DDoS mitigation procedures during attack alerts[cite: 209].
+\end{itemize}
+\end{minipage} \\ \hline
 
-\subsection{Network Monitoring Dashboard Project}
+Tenth & 2082/09/27 &
+\begin{minipage}[t]{10cm}
+\begin{itemize}
+    \item Compiled weekly logs into the final internship report[cite: 232].
+    \item Created a network diagram summarizing internship activities[cite: 233].
+    \item Presented learning outcomes to the NOC manager and supervisor[cite: 233].
+\end{itemize}
+\end{minipage} \\ \hline
 
-The primary project undertaken during the internship was the development of a network monitoring dashboard designed to provide real-time visibility into network performance metrics. The project was motivated by the need to consolidate multiple monitoring sources into a single, intuitive interface that would enable faster detection of network issues and more efficient resource utilization.
+\end{longtable}
 
-The dashboard architecture included several key components. A data collection layer connected to existing network monitoring systems and gathered performance metrics at regular intervals. A data processing layer normalized and aggregated the collected metrics into meaningful indicators. A visualization layer presented the data through charts, graphs, and status indicators that could be easily interpreted by network operators.
+\section{Description of the Project(s) Involved During Internship}
 
-Key features of the dashboard included real-time bandwidth utilization displays across different network segments, latency and packet loss visualization, geographical representation of network status, and historical trend analysis. The dashboard also incorporated user-customizable views allowing operators to focus on specific metrics or network segments relevant to their current activities.
+During the internship, practical knowledge was applied to specific technical projects aimed at improving network reliability and security.
 
-The implementation process involved several phases starting with requirements gathering from NOC staff to understand their monitoring needs and preferences. Following this, the technical architecture was designed considering integration requirements with existing systems. Development progressed iteratively with regular reviews and feedback from users. Testing was conducted to ensure data accuracy and system reliability.
+\subsubsection{FTTH Signal Optimization and Diagnostics}
+The primary technical project involved the diagnosis and optimization of Fiber to the Home (FTTH) connections to reduce customer support tickets related to "Loss of Signal" (LOS)[cite: 127, 134].
 
-The outcomes of the project included improved visibility of network health, reduced time to detect incidents, and enhanced operational efficiency for the NOC team. Feedback from users indicated high satisfaction with the interface and improvements in their ability to monitor network status effectively.
+\textbf{Key Project Activities:}
+\begin{itemize}
+    \item \textbf{Optical Power Analysis:} Utilized Optical Line Terminal (OLT) Command Line Interfaces to query customer ONUs and retrieve real-time optical power metrics (Rx/Tx)[cite: 130].
+    \item \textbf{Threshold Management:} Established that signal levels dropping below $-27$~dBm resulted in high attenuation and service instability[cite: 131].
+    \item \textbf{Physical Remediation:} Guided field technicians to resolve issues identified by the data, such as cleaning dirty connectors or replacing patch cords that were bent beyond the allowable radius[cite: 131, 133].
+\end{itemize}
 
-\subsection{Bandwidth Optimization Analysis Project}
+\subsubsection{Network Security and Access Control Implementation}
+The second project focused on hardening the network infrastructure against unauthorized access through the implementation of router-based security measures[cite: 203].
 
-The second major project focused on analyzing bandwidth usage patterns to inform optimization strategies. The project objectives included understanding current bandwidth consumption trends, identifying peak usage periods, detecting inefficient utilization patterns, and developing recommendations for capacity planning.
+\textbf{Key Project Activities:}
+\begin{itemize}
+    \item \textbf{ACL Configuration:} Designed and deployed Standard and Extended Access Control Lists (ACLs) on routers to filter traffic and block specific malicious IP ranges[cite: 208].
+    \item \textbf{Security Policies:} Implemented the security best practice of adding a default "Deny All" rule at the end of ACL sequences to ensure a fail-safe security posture[cite: 212].
+    \item \textbf{Threat Monitoring:} Monitored live DDoS mitigation systems to identify and respond to incoming attack alerts on the core network[cite: 209].
+\end{itemize}
 
-Data collection involved gathering bandwidth metrics from network monitoring systems over a three-month period. The data included hourly, daily, and weekly usage patterns for different customer segments and network services. Analysis techniques included statistical analysis of usage distributions, correlation of usage with external factors such as time of day and day of week, and identification of outlier usage patterns that might indicate inefficient utilization.
+\section{Tasks / Activities Performed}
 
-Key findings from the analysis revealed clear peak usage patterns during evening hours, significant variation in usage between weekdays and weekends, and specific customer segments that demonstrated consistently high bandwidth consumption. The analysis also identified network segments where utilization was consistently low, suggesting potential for reallocation of resources.
+\subsubsection{Network Monitoring with Zabbix}
+Daily technical operations involved using the Zabbix monitoring system to ensure network uptime.
+\begin{itemize}
+    \item Monitored distribution switches within the Kathmandu Valley area for availability[cite: 58].
+    \item Analyzed real-time graphs for latency and packet loss to detect congestion during peak traffic hours (7~PM -- 10~PM)[cite: 59, 61].
+    \item Interpreted "Red" status triggers to identify device power failures at specific nodes[cite: 62].
+\end{itemize}
 
-Based on these findings, recommendations were developed for several optimization strategies. These included implementing traffic shaping policies during peak hours to ensure equitable access for all customers, promoting off-peak usage through pricing incentives, and planning capacity expansion for segments approaching utilization thresholds. The analysis also informed discussions about service tier structures that could better match customer needs.
+\subsubsection{Layer-2 Switch Configuration}
+Hands-on configuration was performed on Cisco switches using console connections and terminal emulators.
+\begin{itemize}
+    \item Established connection to switch consoles using PuTTY and serial cables[cite: 106].
+    \item configured Virtual LANs (VLANs) to segregate traffic, assigning VLAN~10 for Data and VLAN~20 for Voice[cite: 107].
+    \item Executed commands such as \texttt{switchport access vlan} to assign physical ports to specific logical networks and used \texttt{write memory} to save configurations[cite: 108, 111].
+\end{itemize}
 
-\section{Detailed Technical Tasks and Activities}
+\subsubsection{Linux System Administration}
+Server management tasks were conducted on CentOS-based infrastructure to support network services.
+\begin{itemize}
+    \item Accessed remote monitoring servers securely using the Secure Shell (SSH) protocol[cite: 181].
+    \item Analyzed system logs located in \texttt{/var/log/messages} using text processing tools like \texttt{grep} and \texttt{tail} to identify error patterns[cite: 182, 186].
+    \item Verified the status of essential network services, such as the DNS server, using the command \texttt{systemctl status named}[cite: 183].
+\end{itemize}
 
-\subsection{Router Configuration and Network Management}
-
-Throughout the internship, router configuration activities provided valuable experience in network management practices. Working with Mikrotik and Cisco router platforms, tasks included configuring basic network interfaces, setting up routing protocols, implementing access control lists, and establishing firewall rules. These activities required understanding of networking fundamentals including IP addressing, subnet masks, routing tables, and network security principles.
-
-Configuration management procedures were learned and applied, including documenting changes before implementation, testing configurations in lab environments before deployment, and maintaining backup configurations for quick recovery in case of errors. The intern gained experience with both command-line interfaces and graphical configuration tools, understanding the advantages and appropriate use cases for each approach.
-
-Advanced configuration tasks included configuring virtual private networks, implementing quality of service policies to prioritize critical traffic, and setting up network address translation for connecting internal networks to external services. These activities required understanding of complex networking concepts and careful attention to detail to avoid disrupting network services.
-
-\subsection{Network Traffic Analysis}
-
-Network traffic analysis formed a significant component of technical activities during the internship. Using tools such as Wireshark, the intern learned to capture and analyze network packets at various points in the network. Analysis tasks included identifying traffic types, detecting unusual patterns that might indicate security incidents or performance problems, and troubleshooting connectivity issues by examining packet-level details.
-
-Traffic analysis provided insights into protocol usage, bandwidth consumption by different applications, and communication patterns between network devices. The intern developed skills in applying filters to focus on specific types of traffic, interpreting packet headers and payloads, and correlating traffic patterns with observed network behavior.
-
-Advanced analysis techniques included flow analysis using tools such as NetFlow to understand traffic patterns at a higher level of aggregation, identifying the source and destination of large traffic volumes, and detecting denial of service indicators through unusual traffic patterns. These skills are essential for effective network troubleshooting and security monitoring.
-
-\subsection{Fiber Optic Link Testing and Troubleshooting}
-
-Working with fiber optic infrastructure provided practical experience in the physical layer of network operations. Tasks included testing fiber optic links using optical time-domain reflectometer equipment, measuring signal strength and loss, and identifying faults in fiber cables. The intern learned to interpret test results, locate the position of faults, and coordinate repair activities with field technicians.
-
-Fiber optic troubleshooting procedures included identifying common failure modes such as cable cuts, connector contamination, and signal degradation over distance. The intern gained understanding of fiber optic network architecture including backbone connections, distribution networks, and last-mile connections to customer premises.
-
-Documentation of fiber optic test results and repair activities contributed to the maintenance of network asset records and facilitated planning of network maintenance activities. Understanding the characteristics of fiber optic technology including bandwidth capabilities, susceptibility to physical damage, and environmental considerations provided context for planning network reliability improvements.
-
-\subsection{Customer Network Setup and Configuration}
-
-Customer-facing technical activities included assisting with network setup and configuration for new service activations. Tasks included configuring customer premise equipment such as routers and modems, establishing wireless network configurations, and verifying connectivity to the ISP network. These activities required understanding of various customer network environments and the ability to adapt configurations to meet specific customer needs.
-
-The intern participated in remote troubleshooting of customer connectivity issues, using diagnostic tools to identify problems and guiding customers through resolution steps. This required strong communication skills to translate technical procedures into clear instructions for customers with varying levels of technical expertise.
-
-Network security considerations were integrated into customer setup activities, including implementing appropriate password policies, configuring firewall rules to protect customer networks, and educating customers about security best practices. Documenting customer configurations and support interactions contributed to the knowledge base and facilitated future support activities.
-
-\subsection{Monitoring System Setup and Maintenance}
-
-Setting up and maintaining monitoring systems was a core technical activity throughout the internship. Tasks included configuring monitoring agents on network devices, defining performance metrics to be collected, establishing thresholds for alert generation, and customizing dashboard displays to meet user preferences.
-
-The intern learned to calibrate monitoring systems to avoid false alerts while ensuring genuine issues were detected promptly. This involved analyzing historical performance data to establish appropriate thresholds, testing alert conditions with controlled scenarios, and refining configurations based on operational experience.
-
-System maintenance activities included regular reviews of monitoring configuration to ensure alignment with network changes, updating device inventories as equipment was added or removed, and verifying data accuracy through periodic audits. These activities ensure that monitoring systems continue to provide reliable and actionable information.
-
-\subsection{Incident Documentation and Ticket Management}
-
-Documentation of network incidents and management of support tickets formed an important part of operational activities. The intern learned to create detailed incident records including timestamps, symptoms observed, diagnostic steps taken, resolution implemented, and lessons learned. This documentation enables trend analysis, facilitates training, and provides context for future incidents.
-
-Ticket management activities involved creating and updating support tickets for customer issues, tracking resolution status, escalating complex issues appropriately, and closing tickets when resolution was confirmed. Understanding the lifecycle of support tickets and the importance of timely communication with customers contributed to effective customer service delivery.
-
-The intern gained experience with ticket management systems including entering technical details, assigning priority levels, attaching relevant documentation such as network logs and test results, and generating reports on ticket statistics. These skills are essential for maintaining organized support operations and measuring service quality.
-
-\subsection{Network Security Basics}
-
-Introduction to network security concepts provided foundation for understanding security considerations in ISP operations. Topics studied included firewall principles, access control mechanisms, virtual private network technologies, and network monitoring for security purposes. The intern gained understanding of security policies implemented at Subisu Cablent to protect network infrastructure and customer data.
-
-Practical security activities included configuring firewall rules to control traffic flow, implementing intrusion detection systems to identify potential security threats, and conducting security audits to verify that configurations complied with security policies. These activities provided awareness of the importance of security in network operations and introduced tools and techniques for maintaining network security.
-
-The intern learned about common security threats facing ISPs including distributed denial of service attacks, phishing attempts targeting customers, and unauthorized access attempts. Understanding these threats informed security practices and contributed to a security-conscious approach to all operational activities.
+\subsubsection{Physical Layer Troubleshooting}
+Technical activities extended to the physical maintenance of the optical network.
+\begin{itemize}
+    \item Differentiated between Single-mode and Multi-mode fiber cables and identified connector types including SC, LC, and ST[cite: 33, 34].
+    \item Diagnosed signal attenuation caused by physical stress factors such as dust contamination on connectors or excessive bending of fiber cables[cite: 37, 38].
+    \item Observed and verified fiber splicing procedures using fusion splicers to ensure low-loss connections[cite: 35].
+\end{itemize}
