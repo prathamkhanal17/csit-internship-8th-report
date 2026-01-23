@@ -14,15 +14,14 @@
 \usepackage{url}
 \usepackage{pdfpages}
 \usepackage[hidelinks]{hyperref}
-\usepackage[style=apa,backend=biber]{biblatex}
-\DeclareLanguageMapping{english}{english-apa}
+
+\usepackage[style=apa, backend=biber]{biblatex}
 \addbibresource{references.bib}
 
 \graphicspath{ {./images/} }
 
 \makenomenclature
 \renewcommand{\nomname}{List of Abbreviations}
-\input{chapters/abbreviations}
 
 \titleformat{\chapter}[display]
   {\normalfont\large\bfseries\centering}
@@ -42,18 +41,17 @@
 \input{titlepage}
 \setcounter{page}{2}
 
-\newpage
+\cleardoublepage
+\phantomsection
 \addcontentsline{toc}{chapter}{Mentor's Recommendation}
-\thispagestyle{empty}
-\includegraphics[width=\textwidth, height=0.95\textheight, keepaspectratio]{mentors_recommendation}
+\includepdf[pages=1, pagecommand={\thispagestyle{empty}}, scale=1]{images/mentors_recommendation.pdf}
 
-\newpage
+\cleardoublepage
+\phantomsection
 \addcontentsline{toc}{chapter}{Letter Of Completion}
-\thispagestyle{empty}
-\includegraphics[width=\textwidth, height=0.95\textheight, keepaspectratio]{to_whom_it_may_concern}
+\includepdf[pages=1, pagecommand={\thispagestyle{empty}}, scale=1]{images/to_whom_it_may_concern.pdf}
 
 \newpage
-
 \chapter*{Acknowledgements}
 \addcontentsline{toc}{chapter}{Acknowledgements}
 \input{chapters/00_acknowledgement}
@@ -63,21 +61,21 @@
 \input{chapters/00_abstract}
 
 \tableofcontents
+
 \cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{List of Figures}
 \listoffigures
 
-% 3. List of Tables
 \cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{List of Tables}
 \listoftables
 
-% 4. Nomenclature
 \cleardoublepage
 \phantomsection
-\addcontentsline{toc}{chapter}{List of Abb}
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+\input{chapters/abbreviations}
 \printnomenclature
 
 \newpage
@@ -88,10 +86,11 @@
 \input{chapters/03_internship_activities}
 \input{chapters/04_conclusion}
 
+\newpage
+\nocite{*}
 \printbibliography[heading=bibintoc, title={References}]
 
 \appendix
 \input{chapters/07_appendices}
-
 
 \end{document}
