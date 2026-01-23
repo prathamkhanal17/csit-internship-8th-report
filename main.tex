@@ -2,6 +2,7 @@
 
 \usepackage[top=1in, bottom=1in, left=1.25in, right=1in]{geometry}
 \usepackage{mathptmx}
+\usepackage[toc]{appendix}
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{longtable}
@@ -90,7 +91,8 @@
 \nocite{*}
 \printbibliography[heading=bibintoc, title={References}]
 
-\appendix
-\input{chapters/07_appendices}
+\begin{appendices}
+    \input{chapters/07_appendices}
+\end{appendices}
 
 \end{document}
