@@ -1,16 +1,26 @@
-\chapter{Weekly Logs}
+\chapter{Network Diagrams}
 
 \section{Network Topology Overview}
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{../images/network_topology.png}
+    \caption{Network Topology}
+    \label{fig: Subisu Cable Network Topology - Chitwan, Nepal}
+\end{figure}
 
 Figure A.1 illustrates the high-level network topology of Subisu Cablent operations in the Chitwan region. The diagram shows the interconnection between backbone network links, metropolitan area network infrastructure, and last-mile connections to customer premises. The topology includes redundancy configurations designed to ensure service availability in case of equipment failures.
 
 \section{Core Network Architecture}
 
-The core network consists of multiple high-capacity routers connected in a mesh configuration providing redundancy and load balancing. Backbone links utilize fiber optic connections with capacity in the range of multiple gigabits per second. The core network provides connectivity to regional distribution points and serves as the aggregation point for all customer traffic.
+The core network architecture acts as the central backbone, designated as the \textbf{Subisu National Core}. It consists of a redundant pair of high-capacity routers connected directly to the Internet Backbone via fiber optic uplinks. This layer is responsible for routing traffic into and out of the regional network, connecting downstream to the Metropolitan Area Network (MAN) via both primary and redundant fiber links to ensure continuous connectivity in the event of a link failure.
 
-\section{Distribution Network Architecture}
+\section{Metropolitan Area Network (MAN) Architecture}
 
-Distribution nodes connect the core network to the last-mile infrastructure serving customers. These nodes perform traffic aggregation and apply quality of service policies to prioritize critical applications. Distribution network equipment includes layer 3 switches and routers configured with virtual private network capabilities to support enterprise customers.
+The distribution layer forms the \textbf{Chitwan Metropolitan Area Network (MAN)}. This infrastructure relies on two central switches operating in a high-availability configuration:
+\begin{itemize}
+    \item \textbf{Chitwan MAN Core 1 (Primary)}
+    \item \textbf{Chitwan MAN Core 2 (Backup)}
+\end{itemize}
+These switches are interconnected via a redundant fiber link to maintain synchronization and failover capabilities. The MAN Core switches provide the direct interface for the last-mile infrastructure, delivering connectivity to end-users. Access is provided via direct \textbf{Fiber Drops} connecting the MAN switches to residential and business customer premises.
 
 \chapter{Monitoring Tool Screenshots}
 
@@ -25,3 +35,21 @@ Figure B.2 shows the bandwidth analysis interface displaying historical usage pa
 \section{Alert Configuration Screen}
 
 Figure B.3 presents the alert configuration interface where thresholds for automated notifications are defined. Users can configure different alert levels for various metrics and specify notification delivery methods including email, SMS, and dashboard notifications.
+
+\chapter{Work Logs}
+This appendix presents the chronological record of activities undertaken during the ten-week internship period at the Subisu Cablenet Ltd. These weekly logs detail the day-to-day responsibilities, technical tasks, and troubleshooting procedures performed under the supervision of the senior \textbf{Mr. Biplab Panta} . They serve as an official verification of attendance and provide a granular view of the progression from theoretical orientation to hands-on network configuration and system administration.
+\includepdf[
+  pages=1,
+  pagecommand={
+    \thispagestyle{plain}
+  },
+  addtotoc={
+    1, section, 1, Work Logs, worklogs
+  }
+]{../images/weekly_log.pdf}
+
+% Remaining pages with consistent styling
+\includepdf[
+  pages=2-,
+  pagecommand={\thispagestyle{plain}}
+]{../images/weekly_log.pdf}
