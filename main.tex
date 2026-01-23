@@ -19,7 +19,8 @@
 \graphicspath{ {./images/} }
 
 \makenomenclature
-\input{chapters/05_references}
+\renewcommand{\nomname}{List of Abbreviations}
+\input{chapters/abbreviations}
 
 \titleformat{\chapter}[display]
   {\normalfont\large\bfseries\centering}
@@ -72,9 +73,10 @@
 \input{chapters/03_internship_activities}
 \input{chapters/04_conclusion}
 
+\printbibliography
+
 \appendix
 \input{chapters/07_appendices}
 
-\printbibliography
 
 \end{document}
