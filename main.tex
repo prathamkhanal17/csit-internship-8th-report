@@ -10,8 +10,9 @@
 \usepackage{graphicx}
 \usepackage[labelfont=bf, textfont=bf, font=small]{caption}
 \usepackage{float}
-\usepackage{nomencl}
+\usepackage[intoc]{nomencl}
 \usepackage{url}
+\usepackage{tocbibind}
 \usepackage[style=apa,backend=biber]{biblatex}
 \DeclareLanguageMapping{english}{english-apa}
 \addbibresource{references.bib}
@@ -35,7 +36,10 @@
 
 \begin{document}
 
+\pagenumbering{roman}
+\addcontentsline{toc}{chapter}{Cover Page and Title}
 \input{titlepage}
+\setcounter{page}{2}
 
 \newpage
 \thispagestyle{empty}
@@ -54,12 +58,13 @@
 \end{figure}
 
 \newpage
-\pagenumbering{roman}
 
 \chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
 \input{chapters/00_acknowledgement}
 
 \chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
 \input{chapters/00_abstract}
 
 \tableofcontents
@@ -75,7 +80,7 @@
 \input{chapters/03_internship_activities}
 \input{chapters/04_conclusion}
 
-\printbibliography[title={References}]
+\printbibliography[heading=bibintoc, title={References}]
 
 \appendix
 \input{chapters/07_appendices}
