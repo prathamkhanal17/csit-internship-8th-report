@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project contains a LaTeX template for CSC462 Internship Report focusing on Internet Service Provider operations at Subisu Cablent Pvt Ltd, Chitwan, Nepal. The report documents a ten-week internship experience in the Network Operations Center covering network monitoring, bandwidth optimization, and technical support activities.
+This project contains a LaTeX template for Bsc.CSIT CSC462 Internship Report.
 
 ## Document Structure
 
@@ -119,13 +119,6 @@ Based on CSC462 course guidelines:
 - **Total Marks**: 200 (160 Internal/Mentor + 40 External)
 - **Duration**: Minimum of 180 hours or 10 weeks
 
-## Project Details
-
-- **Company**: Subisu Cablent Pvt Ltd
-- **Location**: Chitwan, Nepal
-- **Duration**: June 2024 - August 2024 (10 weeks)
-- **Role**: Network Operations Center (NOC) Intern
-- **Focus Areas**: Network monitoring, bandwidth optimization, technical support
 
 ## File Structure
 
