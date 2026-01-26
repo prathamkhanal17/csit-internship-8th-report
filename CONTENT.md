@@ -112,15 +112,3 @@
 - **Appendices:** Screenshots, Source Codes, and Work Logs.
 
 ---
-
-## 4. Focus Areas for AI Content Generation
-
-When generating the dummy text, ensure the following technical domains are emphasized:
-
-- **Fields:** Software development, hardware, network services, or database systems.
-
-- **Evaluation Focus:** The AI should simulate "Presentation Skills," "Understanding of Internship Activities," and "Technical Depth".
-
-- **Marks Distribution (For Context):** Mentor (100 marks), Supervisor (50 marks), External (40 marks), HOD (10 marks).
-
----
