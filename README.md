@@ -149,7 +149,7 @@ internship-report/
 1. Ensure LaTeX distribution is installed
 2. Navigate to project directory
 3. Run compilation commands
-4. View generated PDF in `build/main.pdf` or project directory
+4. View generated PDF as `main.pdf` in the same project directory
 
 ## Technical Details
 
