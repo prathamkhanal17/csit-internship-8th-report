@@ -1,4 +1,4 @@
-# Internship Report Wiki
+# Internship Report Template
 
 ## Overview
 
