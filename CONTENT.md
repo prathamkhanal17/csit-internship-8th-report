@@ -1,5 +1,3 @@
----
-
 # Internship Report Guidelines (CSC462)
 
 ## 1. General Course Information
