@@ -1,4 +1,4 @@
-# Internship Report Template
+# CSIT 8th Semester Internship Report Template
 
 ## Overview
 
