@@ -34,7 +34,7 @@ This template follows the standard structure required by the CSC462 course:
 - **Appendices** (Screenshots, Code, Logs)
 
 ## File Structure
-
+```
 internship-report/
 ├── main.tex                  # Entry point for the LaTeX document
 ├── titlepage.tex             # Cover page layout
@@ -47,6 +47,7 @@ internship-report/
     ├── 00_abstract.tex
     ├── 01_introduction.tex
     └── ...
+```
 ```
 
 ## Compilation Guide
