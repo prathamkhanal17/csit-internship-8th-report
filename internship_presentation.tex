@@ -1,0 +1,164 @@
+\documentclass[10pt, aspectratio=169]{beamer}
+
+% Theme
+\usetheme{metropolis}
+\usecolortheme{default}
+\metroset{sectionpage=none} % Disable separate section title slides
+
+% Packages
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{tikz}
+
+% Logo on every slide (top right)
+\addtobeamertemplate{frametitle}{}{%
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[anchor=south west, yshift=2pt] at (current page.south west) {\includegraphics[height=1.2cm]{images/bkc_logo.png}};
+    \end{tikzpicture}
+}
+
+% Metadata
+\title{Internship Report}
+\subtitle{Network Operations \& ISP Support at Subisu Cablenet Pvt. Ltd.}
+\author{Pratham Khanal}
+\date{\today}
+\institute{Tribhuvan University \\ Institute of Science and Technology}
+
+\begin{document}
+
+% Title Slide
+\maketitle
+
+% Outline
+\begin{frame}{Outline}
+    \tableofcontents[hideallsubsections]
+\end{frame}
+
+% 1. Introduction
+\section{1. Introduction}
+\begin{frame}{Introduction}
+    \begin{itemize}
+        \item \textbf{Role}: Network Operations and ISP Support Intern.
+        \item \textbf{Organization}: Subisu Cablenet Pvt. Ltd. (Chitwan Branch).
+        \item \textbf{Duration}: 10 Weeks (Kartik 2082 -- Poush 2082).
+        \item \textbf{Overview}:
+        \begin{itemize}
+            \item Bridged the gap between theoretical knowledge and professional practice.
+            \item Work conducted in a 24/7 Network Operations Center (NOC).
+            \item Focused on monitoring, physical layer connectivity, and system administration.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+% 2. Problem Statement
+\section{2. Problem Statement}
+\begin{frame}{Problem Statement}
+    Isolating and resolving real-world ISP challenges:
+    \vspace{0.5cm}
+    \begin{itemize}
+        \item \textbf{Signal Attenuation}: High loss due to dust or bent fiber cables (Low Rx power).
+        \item \textbf{Network Congestion}: High latency and packet drop during peak hours (7 PM -- 10 PM).
+        \item \textbf{Connectivity Disputes}: IP conflicts and "Loss of Signal" (LOS) troubleshooting.
+        \item \textbf{Security Threats}: Unauthorized access attempts and DDoS risks on the core network.
+    \end{itemize}
+\end{frame}
+
+% 3. Objectives
+\section{3. Objectives}
+\begin{frame}{Objectives}
+    The primary goal was to gain diverse hands-on experience in a large-scale network.
+    \vspace{0.5cm}
+    \begin{itemize}
+        \item \textbf{Technical Exposure}: Understand infrastructure, connectivity standards, and troubleshooting.
+        \item \textbf{Operational Support}: Assist in system monitoring (Zabbix) and administrative workflows.
+        \item \textbf{Skill Development}: Master configuration of Layer-2 switches and Linux-based servers.
+    \end{itemize}
+\end{frame}
+
+% 4. Projects Involved
+\section{4. Projects Involved}
+\begin{frame}{Projects Involved}
+    \subsection{FTTH Signal Optimization}
+    \textbf{Project 1: FTTH Signal Optimization and Diagnostics}
+    \begin{itemize}
+        \item \textbf{Goal}: Reduce "Loss of Signal" (LOS) tickets.
+        \item \textbf{Action}: Analyzed OLT power metrics; identified customers with $<-27$ dBm signals.
+        \item \textbf{Outcome}: Guided technicians to clean connectors and replace bent patch cords.
+    \end{itemize}
+
+    \vspace{0.5cm}
+
+    \textbf{Project 2: Network Security Implementation}
+    \begin{itemize}
+        \item \textbf{Goal}: Harden network against unauthorized access.
+        \item \textbf{Action}: Deployed Standard and Extended ACLs on routers.
+        \item \textbf{Outcome}: Blocked malicious IP ranges and enforced "Deny All" default policies.
+    \end{itemize}
+\end{frame}
+
+% 5. Activities Performed
+\section{5. Activities Performed}
+\begin{frame}{Activities Performed}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \textbf{Network Monitoring}
+            \begin{itemize}
+                \item Used \textbf{Zabbix} to monitor uptime, latency, and throughput.
+                \item Identified critical outages and power failures.
+            \end{itemize}
+
+            \vspace{0.3cm}
+
+            \textbf{Device Configuration}
+            \begin{itemize}
+                \item Configured Cisco Layer-2 switches.
+                \item Created VLANs: \textbf{10} (Data) and \textbf{20} (Voice).
+            \end{itemize}
+        \end{column}
+
+        \begin{column}{0.48\textwidth}
+            \textbf{Linux System Admin}
+            \begin{itemize}
+                \item SSH into CentOS servers.
+                \item Log analysis with \texttt{grep}, \texttt{tail}.
+                \item DNS service status checks.
+            \end{itemize}
+
+            \vspace{0.3cm}
+
+            \textbf{Fiber Diagnostics}
+            \begin{itemize}
+                \item Splicing with fusion splicers.
+                \item Differentiating Single-mode vs. Multi-mode.
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% 6. Conclusion
+\section{6. Conclusion}
+\begin{frame}{Conclusion \& Learning Outcomes}
+    \textbf{Conclusion}
+    \begin{itemize}
+        \item Successfully transitioned from classroom theory to live industry practice.
+        \item Gained confidence in handling enterprise-grade equipment (Cisco, OLTs).
+    \end{itemize}
+
+    \vspace{0.3cm}
+
+    \textbf{Key Learning Outcomes}
+    \begin{itemize}
+        \item \textbf{Technical}: Fiber optics mastery, VLAN/Subnetting, Linux CLI usage.
+        \item \textbf{Professional}: Incident lifecycle management (CRM), Documentation, and Pressure handling.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[standout]
+    Thank You!
+    \vspace{1cm}
+
+    \small Questions?
+\end{frame}
+
+\end{document}
