@@ -1,9 +1,15 @@
+\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}
 \begin{appendices}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+
+\addcontentsline{toc}{chapter}{APPENDICES}
     \chapter{Screenshots}
 The following visual documentation serves as a definitive record of the terminal-based interactions and command-line execution sequences performed during the infrastructure configuration phase. These captures substantiate the systematic implementation of logical network segmentation, illustrating the precise methodology used to initialize Virtual Local Area Networks (VLANs) and the subsequent orchestration of physical port assignments via the PuTTY management interface. This section provides a transparent view of the administrative protocols utilized to ensure optimal traffic isolation and network integrity.
+
     \includepdf[
     pages=-,
-    pagecommand={\thispagestyle{plain}}
+    pagecommand={\thispagestyle{plain}},
+    scale=0.8
     ]{../images/ss.pdf}
 \chapter{Work Logs}
 
