@@ -1,4 +1,4 @@
-# BSc. CSIT 8th Semester Internship Report LaTeX Template (CSC462)
+# Internship Report LaTeX Template (CSC462)
 
 A comprehensive, **Tribhuvan University (TU)** compliant LaTeX template for the **BSc. CSIT 8th Semester Internship (CSC462)** report. Designed for students under the **Institute of Science and Technology (IOST)** to streamline the report writing process.
 
