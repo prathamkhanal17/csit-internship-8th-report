@@ -1,0 +1,179 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{longtable}
+\usepackage{array}
+
+\pagestyle{empty}
+
+\newcommand{\weeklylogentry}[6]{
+    \newpage
+    \begin{center}
+        \Large \textbf{INTERNSHIP WEEKLY PROGRESS REPORT}
+    \end{center}
+    \vspace{0.2cm}
+
+    \noindent \rule{\textwidth}{1pt}
+    \vspace{0.3cm}
+
+    \noindent \textbf{Student Name:} John Doe \hfill \textbf{Week Number:} #1 \hfill \textbf{Date:} #2
+
+    \vspace{0.2cm}
+    \noindent \rule{\textwidth}{1pt}
+    \vspace{0.4cm}
+
+    \noindent \large \textbf{1. Responsibility / Main Focus:} \\
+    \normalsize #3
+    \vspace{0.4cm}
+
+    \noindent \large \textbf{2. Activities Performed:}
+    \normalsize
+    \begin{itemize}[leftmargin=*, parsep=2pt, itemsep=2pt]
+    #4
+    \end{itemize}
+    \vspace{0.2cm}
+
+    \noindent \large \textbf{3. Observations / Learning:} \\
+    \normalsize #5
+    \vspace{0.4cm}
+
+    \noindent \large \textbf{4. Plan for Next Week:} \\
+    \normalsize #6
+    \vspace{0.4cm}
+
+    \noindent \rule{\textwidth}{1pt}
+    \vspace{0.3cm}
+
+    \noindent \large \textbf{5. Performance Appraisal by Mentor:}
+    \normalsize
+    \vspace{0.2cm}
+
+    \vspace{2.5cm} % Space for handwritten comments
+
+    \noindent \rule{\textwidth}{0.5pt}
+    \vspace{0.5cm}
+
+    \noindent \begin{tabular}{@{}p{0.45\textwidth}p{0.1\textwidth}p{0.45\textwidth}@{}}
+        \textbf{Supervisor Name:} & & \textbf{Mentor Name:} \\[1.5cm]
+        \rule{0.8\linewidth}{0.5pt} & & \rule{0.8\linewidth}{0.5pt} \\
+        Signature & & Signature \\[0.2cm]
+        Date: \rule{0.5\linewidth}{0.5pt} & & Date: \rule{0.5\linewidth}{0.5pt} \\
+    \end{tabular}
+}
+
+\begin{document}
+
+% Week 1
+\weeklylogentry{First}{2082/07/23}
+{Onboarding and Environment Setup}
+{
+    \item Attended internship orientation and introduction to the Development team.
+    \item Set up the development environment, including PHP, MySQL, Node.js, and VS Code.
+    \item Studied the existing project requirements for "HisabKitab" and established a project roadmap.
+}
+{Setting up a proper development environment is crucial for workflow efficiency and consistency across the team.}
+{Start working on frontend wireframes and HTML structure.}
+
+% Week 2
+\weeklylogentry{Second}{2082/07/30}
+{Frontend Design and Wireframing}
+{
+    \item Focused on fundamental web technologies: HTML5 and CSS3.
+    \item Designed the initial wireframes and UI components for the HisabKitab dashboard.
+    \item Implemented responsive layouts using CSS Flexbox and Grid.
+}
+{Learned that CSS Flexbox and Grid offer powerful tools for creating responsive designs that adapt to different screen sizes.}
+{Add interactivity to the UI using JavaScript.}
+
+% Week 3
+\weeklylogentry{Third}{2082/08/07}
+{Frontend Logic Implementation}
+{
+    \item Introduced JavaScript for frontend interactivity.
+    \item Implemented dynamic DOM manipulation for adding and removing expense rows in the UI.
+    \item Learned about asynchronous JavaScript (Promises and Fetch API) for future data fetching.
+}
+{Direct DOM manipulation allows for dynamic user experiences without page reloads, which significantly improves the perceived speed of the application.}
+{Begin server-side programming with basic PHP.}
+
+% Week 4
+\weeklylogentry{Fourth}{2082/08/14}
+{Backend Basics and Security}
+{
+    \item Transitioned to server-side development with basic PHP.
+    \item Built simple script-based CRUD operations for managing a mock customer list.
+    \item Understood the importance of server-side validation and security.
+}
+{Server-side validation is essential for security as client-side checks can be bypassed. Input sanitization is key to preventing injection attacks.}
+{Install and explore the Laravel framework.}
+
+% Week 5
+\weeklylogentry{Fifth}{2082/08/21}
+{Framework Setup and Routing}
+{
+    \item Installed and configured the Laravel framework.
+    \item Explored the Laravel directory structure and primary configuration files.
+    \item Set up the first set of routes and successfully rendered a "Hello World" view.
+}
+{Using a framework like Laravel provides a structured and secure foundation for application development.}
+{Implement Controllers and master Views using Blade.}
+
+% Week 6
+\weeklylogentry{Sixth}{2082/08/28}
+{MVC Architecture Implementation}
+{
+    \item Deep dive into the MVC (Model-View-Controller) architecture.
+    \item Created the first Controller and started migrating frontend assets into Blade templates.
+    \item Implemented a master layout file for consistent UI across all pages.
+}
+{Blade templates significantly reduce code duplication by allowing the use of master layouts and reusable components.}
+{Integrate real database connections and design migrations.}
+
+% Week 7
+\weeklylogentry{Seventh}{2082/09/06}
+{Database Design and Seeding}
+{
+    \item Focused on database integration and migrations.
+    \item Created the \texttt{Customer} and \texttt{Transaction} models and their corresponding migrations.
+    \item Seeded the database with sample data using Laravel Factories.
+}
+{Database migrations serve as version control for the database schema, making it easy to share and synchronize database structures among team members.}
+{Develop core CRUD functionality for transactions.}
+
+% Week 8
+\weeklylogentry{Eighth}{2082/09/13}
+{Core Functionality Development}
+{
+    \item Developed core CRUD modules for the Transaction management system.
+    \item Implemented Eloquent relationships (One-to-Many) between Customers and Transactions.
+    \item Added form validation and custom error messages in Blade views.
+}
+{Eloquent ORM relationships simplify complex SQL joins into readable method calls, speeding up the development of related data queries.}
+{Implement search functionality via internal APIs.}
+
+% Week 9
+\weeklylogentry{Ninth}{2082/09/20}
+{API Development and Optimization}
+{
+    \item Developed a search API for customers to improve user efficiency.
+    \item Integrated the Search API with the frontend using JavaScript and Fetch.
+    \item Performed performance optimization of database queries using eager loading (\texttt{with()}).
+}
+{Eager loading is critical for performance optimization to prevent the N+1 query problem when fetching related data models.}
+{Final testing, bug fixing, and report compilation.}
+
+% Week 10
+\weeklylogentry{Tenth}{2082/09/27}
+{Testing, Documentation, and Review}
+{
+    \item Final testing and bug fixing of the complete "HisabKitab" application.
+    \item Compiled the weekly logs into the final internship report.
+}
+{Thorough testing helps identify edge cases that might be missed during initial development. Documentation is vital for the long-term maintainability of the project.}
+{Final submission and project handover.}
+
+\end{document}
